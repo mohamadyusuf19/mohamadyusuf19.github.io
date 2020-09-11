@@ -6,12 +6,16 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:100,200,300,500,600,400,700);
 
 body {
-  font-family:"Montserrat", Courier, monospace; background-color:#fff; color:#; display: block; margin: 0px;
+  font-family: "Montserrat", Courier, monospace;
+  background-color: #fff;
+  color: #;
+  display: block;
+  margin: 0px;
 }
 
-
-ul, menu, dir {
-
+ul,
+menu,
+dir {
   display: block;
 
   list-style-type: disc;
@@ -27,14 +31,12 @@ ul, menu, dir {
   -webkit-padding-start: 0px;
 }
 
-
 li {
-  display: list-item;text-align: -webkit-match-parent;
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
 
-
 h2 {
-
   display: block;
 
   font-size: 1.5em;
@@ -50,31 +52,30 @@ h2 {
   font-weight: bold;
 }
 
-
 p {
-    display: block;
-    color: #999;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    }
-*{box-sizing:border-box
+  display: block;
+  color: #999;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+* {
+  box-sizing: border-box;
 }
 
-a{
-  color:inherit !important;
-  text-decoration:none !important;
-  transition:all .4s
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: all 0.4s;
 }
 
-
-a:hover,a:focus,a:active{
+a:hover,
+a:focus,
+a:active {
   /*color:#00a287 !important;*/
   color: rgb(54, 172, 213) !important;
 }
-
-
 
 ul {
   padding: initial;
@@ -82,144 +83,141 @@ ul {
 
 /* CSS Document Conten */
 
-
 .conten-warp {
   display: grid;
-  max-width:850px;
-  margin:0 auto;
+  max-width: 850px;
+  margin: 0 auto;
 }
-
 
 .conten-left {
-  float:left;height:
-  100vh;position: fixed;
+  float: left;
+  height: 100vh;
+  position: fixed;
   width: 200px;
   background-color: #f3f3f3;
-  color:#5c5c5c;
+  color: #5c5c5c;
 }
 
-
 .conten-left img {
-  padding-top:50px;
+  padding-top: 50px;
   max-width: 100%;
   border-radius: 4px;
   /*filter: grayscale(1);*/
 }
 
-
 /*.conten-left img:hover {filter: grayscale(0);}*/
-
 
 .conten-left-img-warp {
   padding: 10px;
   border-radius: 10%;
 }
 
-
 .conten-left ul {
-  list-style:none;
+  list-style: none;
 }
-
 
 .conten-left li {
-  margin:10px;
+  margin: 10px;
 }
 
-
 .conten-left-copy {
-  font-size: 13px;font-weight: 600;
-  width: 100%;position: absolute;bottom: 1px;
-  text-align: center;padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  width: 100%;
+  position: absolute;
+  bottom: 1px;
+  text-align: center;
+  padding: 10px;
   /*background-color: #00a287;*/
   background-color: rgb(54, 172, 213);
   color: #fff;
 }
 
-
 /*.conten-left-copy:hover
 {background-color: #00a287;color: #fff;}*/
 
-
-
 .conten-right {
-  float: right;max-width: 75%;
+  float: right;
+  max-width: 75%;
   margin-left: 10px;
-  width:100%;
+  width: 100%;
 }
-
 
 .conten-right h2 {
   /*color: #777;*/
   color: #333;
   font-size: 20px;
-  margin-top: 30px;margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   margin-left: 10px;
 }
 
-
 .conten-right-data {
   font-size: 13px;
-  padding: 10px;color:#00a287;
+  padding: 10px;
+  color: #00a287;
   background-color: #f3f3f3;
   margin-bottom: 3px;
   color: #3f71aa;
 }
 
-
-
-.conten-left-img-content img{
+.conten-left-img-content img {
   /*width: 88px;*/
   border: 1px solid #e5e5e5;
 }
 
 button.accordion {
-    background-color: #fff;
-    /*color: #444;*/
-    color: #3f71aa;
-    padding-left: inherit;
-    cursor: pointer;
-    padding: 15px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 13px;
-    transition: 0.4s;
-    border-bottom: 1px solid #e5e5e5 !important;
+  background-color: #fff;
+  /*color: #444;*/
+  color: #3f71aa;
+  padding-left: inherit;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+  transition: 0.4s;
+  border-bottom: 1px solid #e5e5e5 !important;
 }
 
-button.accordion.active, button.accordion:hover {
-    background-color: #fff;
+button.accordion.active,
+button.accordion:hover {
+  background-color: #fff;
 }
 
 button.accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
 }
 
 button.accordion.active:after {
-    content: "\2212";
+  content: "\2212";
 }
 
 div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    margin-bottom: 0px;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 0px;
 }
 
 .button-views {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.button-view, .button-view:hover, .button-view::after, .button-view:active {
+.button-view,
+.button-view:hover,
+.button-view::after,
+.button-view:active {
   background: rgb(54, 172, 213);
   border-radius: 30px;
   color: #fff !important;
@@ -227,26 +225,35 @@ div.panel {
   font-size: 13px;
 }
 
+.row {
+  display: flex;
+  align-items: center;
+}
+
 img.img-small {
-  float: left;
   max-height: 50px;
   margin: 8px 10px;
 }
 /* CSS Document Responsive */
 
-
 @media only screen and (max-width: 820px) {
-
   .conten-left {
-    float:none;position:inherit;width:100%;text-align:center;height: auto;
+    float: none;
+    position: inherit;
+    width: 100%;
+    text-align: center;
+    height: auto;
   }
 
   .conten-right {
-    float:none;max-width:100%;margin-left: 0px;padding:5px;
+    float: none;
+    max-width: 100%;
+    margin-left: 0px;
+    padding: 5px;
   }
 
   .conten-right-data {
-    width:100%
+    width: 100%;
   }
 
   .conten-right h2 {
@@ -257,14 +264,12 @@ img.img-small {
     max-width: 16%;
   }
 
-    .conten-left-copy {
-      position:inherit;
+  .conten-left-copy {
+    position: inherit;
   }
 }
 
-
 @media only screen and (max-width: 335px) {
-
   .conten-left img {
     max-width: 50%;
   }
